@@ -13,42 +13,47 @@
 <body>
     <header>
         <h1>Weather Dashboard</h1>
-        <p>
+        <p id="current-time">
             <!-- time el -->
         </p>
     </header>
 
-    <main>
-        <div>
+    <main class="conainer-fluid">
+        <div class="row">
             <!-- search bar cont-->
-            <div>
+            <div class="col-12 col-md-6 p-2 search-column">
                 <!-- search bar el -->
+                <form class="border p-2" id="search-form-el">
+                    <h4>Search City</h4>
+                    <input class="form-input" id="search-input" />
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </form>
             </div>
-            <div>
+            <div class="search-hist border" id="search-hist-el">
                 <!-- search hist el -->
             </div>
         </div>
 
-        <div>
+        <div class="col-12 col-md-9">
             <!-- forecast cont -->
-            <div>
+            <div class="row border">
                 <!-- current weather cont -->
-                <div>
+                <div class="col-12">
                     <!-- current city name el -->
+                    <h2 id="displayed-city"></h2>
                     <!-- current weather el -->
+                    <div  class="list-group" id="current-weather-el"></div>
                 </div>
             </div>
-            <div>
+            <div class="row border">
                 <!-- five day cont -->
-                <div>
+                <h2 class="col-12" id="five-day-title-el"></h2>
+                <div class="d-flex" id="current-five-day-el">
                     <!-- five day el -->
                 </div>
             </div>
         </div>
-
-        <div>
-            <!--  -->
-        </div>
+        
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
