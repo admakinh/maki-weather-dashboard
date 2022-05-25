@@ -1,0 +1,23 @@
+/* ADD CUSTOM STYLING HERE */
+h1 {
+    color: rgb(30, 106, 135);
+}
+
+/* UV STYLING */
+.uv-good{
+    background-color: rgb(90, 209, 112);
+    color: white;
+}
+.uv-bad{
+    background-color: rgb(231, 235, 25);
+    color: white;
+}
+
+.uv-ugly{ 
+    background-color: rgb(188, 33, 13);
+    color: white;
+}
+
+#current-forecast {
+    background-color: rgb(138, 237, 255);
+}
